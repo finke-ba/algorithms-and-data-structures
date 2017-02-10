@@ -11,15 +11,15 @@ public class SortCompare {
 
   public static double time(String alg, Double[] a) {
     Stopwatch sw = new Stopwatch();
-    if      (alg.equals("Selection"))       Selection.sort(a);
-    else if (alg.equals("Insertion"))       Insertion.sort(a);
-    else if (alg.equals("Shell"))           Shell.sort(a);
+    if      (alg.equals("Selection"))       Selection.sort(a); //N2
+    else if (alg.equals("Insertion"))       Insertion.sort(a); //N2
+    else if (alg.equals("Shell"))           Shell.sort(a); // LgN
+    else if (alg.equals("Merge"))           Merge.sort(a); // LgN
+    else if (alg.equals("MergeBU"))         MergeBU.sort(a); // LgN
     //else if (alg.equals("InsertionX"))      InsertionX.sort(a);
     //else if (alg.equals("BinaryInsertion")) BinaryInsertion.sort(a);
     //else if (alg.equals("Bubble"))          Bubble.sort(a);
-    //else if (alg.equals("Merge"))           Merge.sort(a);
     //else if (alg.equals("MergeX"))          MergeX.sort(a);
-    //else if (alg.equals("MergeBU"))         MergeBU.sort(a);
     //else if (alg.equals("Quick"))           Quick.sort(a);
     //else if (alg.equals("Quick3way"))       Quick3way.sort(a);
     //else if (alg.equals("QuickX"))          QuickX.sort(a);
