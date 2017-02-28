@@ -16,11 +16,11 @@ public class SortCompare {
     else if (alg.equals("Shell"))           Shell.sort(a); // LgN
     else if (alg.equals("Merge"))           Merge.sort(a); // LgN
     else if (alg.equals("MergeBU"))         MergeBU.sort(a); // LgN
-    //else if (alg.equals("InsertionX"))      InsertionX.sort(a);
+    else if (alg.equals("Quick"))           Quick.sort(a); //NLgN
+      //else if (alg.equals("InsertionX"))      InsertionX.sort(a);
     //else if (alg.equals("BinaryInsertion")) BinaryInsertion.sort(a);
     //else if (alg.equals("Bubble"))          Bubble.sort(a);
     //else if (alg.equals("MergeX"))          MergeX.sort(a);
-    //else if (alg.equals("Quick"))           Quick.sort(a);
     //else if (alg.equals("Quick3way"))       Quick3way.sort(a);
     //else if (alg.equals("QuickX"))          QuickX.sort(a);
     //else if (alg.equals("Heap"))            Heap.sort(a);
