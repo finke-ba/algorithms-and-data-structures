@@ -4,9 +4,6 @@ import libs.StdIn;
 import libs.StdOut;
 import libs.StdRandom;
 
-/**
- * @author Finkelshteyn
- */
 public class Quick {
 
   /**
