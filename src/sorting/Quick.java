@@ -19,7 +19,8 @@ public class Quick {
   }
 
   private static void sort(Comparable[] a, int lo, int hi) {
-    if (hi <= lo) return;
+    //if (hi <= lo) return; // with default implementation For 1000 random Doubles Quick is 1.1 times faster than Merge
+    if (hi <= lo + 15) {Insertion.sort(a, lo, hi); return;} //with this improvement For 1000 random Doubles Quick is 1.4 times faster than Merge
     int j = partition(a, lo, hi);
     sort(a, lo, j-1);
     sort(a, j+1, hi);
