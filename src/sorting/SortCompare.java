@@ -13,9 +13,9 @@ public class SortCompare {
     Stopwatch sw = new Stopwatch();
     if      (alg.equals("Selection"))       Selection.sort(a); //N2
     else if (alg.equals("Insertion"))       Insertion.sort(a); //N2
-    else if (alg.equals("Shell"))           Shell.sort(a); // LgN
-    else if (alg.equals("Merge"))           Merge.sort(a); // LgN
-    else if (alg.equals("MergeBU"))         MergeBU.sort(a); // LgN
+    else if (alg.equals("Shell"))           Shell.sort(a); // N7/6, N4/3, depends on selected steps
+    else if (alg.equals("Merge"))           Merge.sort(a); // NLgN
+    else if (alg.equals("MergeBU"))         MergeBU.sort(a); // NLgN
     else if (alg.equals("Quick"))           Quick.sort(a); //NLgN
     else if (alg.equals("Quick3way"))       Quick3way.sort(a); //N when keys are repeated
       //else if (alg.equals("InsertionX"))      InsertionX.sort(a);
